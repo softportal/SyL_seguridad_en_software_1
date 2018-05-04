@@ -1,0 +1,12 @@
+_Determinar cuál es la dirección de memoria asignada a la variable local r de la función main() del programa en distintas ejecuciones del mismo usando el lanzador ./bin_input.sh. ¿Varía el valor de esas direcciones entre ejecuciones? En caso afirmativo, proporcionar al menos 3 valores distintos obtenidos para la dirección de r._
+
+$ gdp -p $(pgrep messages)
+$ break message.c:94
+
+* Todas las ejecuciones
+Valor de r: $2 = (int *) 0xffffd498
+
+Observamos que al desactivar ASLR, la dirección de memoria se mantiene para distintas ejecuciones del mismo programa, ya que esta técnica se encarga de que la memoria se conceda de forma aleatoria. 
+
+
+

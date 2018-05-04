@@ -1,0 +1,18 @@
+_Determinar cuál es la dirección de memoria asignada a la variable local r de la función main() del programa en distintas ejecuciones del mismo usando el lanzador ./bin_input.sh. ¿Varía el valor de esas direcciones entre ejecuciones? En caso afirmativo, proporcionar al menos 3 valores distintos obtenidos para la dirección de r._
+
+$ gdp -p $(pgrep messages)
+$ break message.c:94
+
+* Primera ejecución
+Valor de r: $2 = (int *) 0xffe5bab8
+
+* Segunda ejecución
+Valor de r: $2 = (int *) 0xffb00028
+
+* Tercera ejecución
+Valor de r: $2 = (int *) 0xff95e7e8
+
+Observamos que la dirección cambia cada vez que hacemos una nueva ejecución del binario
+
+
+
