@@ -3,6 +3,8 @@ _Determinar cuál es la dirección de memoria asignada a la variable local r de 
 $ gdp -p $(pgrep messages)
 $ break message.c:94
 
+(TMUX ACTIVADO)
+
 * Primera ejecución
 Valor de r: $2 = (int *) 0xffe5bab8
 

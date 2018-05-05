@@ -1,0 +1,2 @@
+¿Cuál es la dirección de memoria de buf (la variable local de la función main)? Responder usando formato hexadecimal (“0x” seguido de dígitos hexadecimales de 0 a f, como por ejemplo 0xffffab40) o en formato decimal. Se pide la dirección de memoria de buf, no el contenido.
+

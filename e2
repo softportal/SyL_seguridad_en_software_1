@@ -1,4 +1,4 @@
 _En el programa hay una vulnerabilidad de desbordamiento de un buffer cuya memoria está reservada en la pila. ¿Cuál es el nombre de la variable que contiene el buffer (reservado en pila) que puede desbordarse?_
 
 
-La variable msg es un búfer de DATA_SIZE bytes, como es imposible conocer cuantos caracteres leerá la función gets de antemano y como seguirá  almacenando caracteres pasado el final del búfer, es extremadamente peligrosa
+La variable __msg__ es un búfer de DATA_SIZE bytes, como es imposible conocer cuantos caracteres leerá la función gets de antemano y como seguirá  almacenando caracteres pasado el final del búfer, es extremadamente peligrosa

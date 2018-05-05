@@ -3,8 +3,15 @@ _Determinar cuál es la dirección de memoria asignada a la variable local r de 
 $ gdp -p $(pgrep messages)
 $ break message.c:94
 
+
+(TMUX ACTIVADO)
 * Todas las ejecuciones
 Valor de r: $2 = (int *) 0xffffd498
+
+
+(SIN TMUX)
+* Todas las ejecuciones
+Valor de r: $2 = (int *) 0xffffd4d8
 
 Observamos que al desactivar ASLR, la dirección de memoria se mantiene para distintas ejecuciones del mismo programa, ya que esta técnica se encarga de que la memoria se conceda de forma aleatoria. 
 

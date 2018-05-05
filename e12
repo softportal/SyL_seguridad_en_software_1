@@ -1,0 +1,1 @@
+¿Qué entrada se debe proporcionar al programa para que ptrs[s] lea (y luego intente ejecutar) lo que se encuentra en el byte número 65 de buf (buf[64]) Responder usando un entero sin signo.
