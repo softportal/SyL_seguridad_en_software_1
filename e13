@@ -1,5 +1,1 @@
-Nuestro objetivo ahora es introducir una variante de la cadena de entrada que se muestra más abajo, para que la operación ptrs[s] ejecute la función write_secret() que imprime un secreto por pantalla. Para ello hay que lograr explotar el desbordamiento del buffer buf, inyectando una valor especifico a escribir en los bytes 65 a 68 del buffer. ¿Con qué valores se ha de reemplazar cada “YY” en la cadena de entrada que se muestra a continuación para lograr que el programa ejecute la función write_secret()? (Pista: Es preciso tener en cuenta el endianness de la arquitectura x86)
-
-Formato de la cadena de entrada:
-
-1040108884\x00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\xYY\xYY\xYY\xYY
+Supongamos que se desea desbordar el buffer msg para realizar un ataque de stack smashing. Tras lanzar el programa, esto podría lograrse introduciendo “2” para que se invocara la función put_message(), y luego introducir suficientes bytes para sobrescribir la dirección de retorno de la función con la dirección de write_secret(). ¿Cuántos bytes debemos introducir antes de la dirección de write_secret() para realizar la sobrescritura de la dirección de retorno almacenada en la pila?

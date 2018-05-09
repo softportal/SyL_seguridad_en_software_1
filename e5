@@ -1,3 +1,5 @@
 Considerando el buffer identificado en el punto anterior ¿Qué línea de código desbordará el buffer al ejecutarse? (Se pide el número de línea, no el código en sí)
 
-la línea 97:   r = read(infd, buf, sizeof(buf)-sizeof(char));
+Linea 101:
+
+	fptr tmp = ptrs[s];

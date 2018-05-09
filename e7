@@ -1,1 +1,12 @@
 ¿Cuál es la dirección de ptrs (la variable global)? Como en la pregunta anterior, indicar la respuesta en formato hexadecimal o decimal.
+
+(gdb) b messages.c:90
+(gdb) cont
+
+(gdb) p ptrs
+	$1 = {0, 0x80485c8 <get_message>, 0x804866f <put_message>} 
+(gdb) p &ptrs
+	$2 = (fptr (*)[3]) 0x8049bd0
+
+
+Por tanto la dirección de memoria es: 0x8049bd0

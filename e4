@@ -1,5 +1,3 @@
 En el programa existe otra vulnerabilidad –que nada tiene que ver con la primera–, y que involucra a un buffer cuya memoria no está asignada en la pila. El programa permite potencialmente el acceso fuera de límites a ese buffer, lo cual constituye a todos los efectos un desbordamiento de buffer. ¿Qué variable contiene este buffer?
 
-lo contiene la variable buf:
-
-	char  buf[1024] = {0};
+variable ptrs;

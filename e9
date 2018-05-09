@@ -1,1 +1,11 @@
 ¿Cuál es la dirección de p (la variable local de la función main)? (Usar decimal o hexadecimal.)
+
+Aprovechamos la sesión anterior situada en messages:90.
+
+(gdb) next 4
+(gdb) p &p
+$8 = (fptr *) 0xffffd4dc
+
+
+Por lo tanto sabemos que la dirección es: 0xffffd4dc
+

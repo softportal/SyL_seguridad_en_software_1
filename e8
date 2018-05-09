@@ -1,1 +1,6 @@
 ¿Cuál es la dirección de la función write_secret()? (Usar decimal o hexadecimal.)
+
+Aprovechando la sesión de gdb de la pregunta anterior:
+
+(gdb) p write_secret
+{void (void)} 0x804857c <write_secret>

@@ -1,1 +1,16 @@
-¿Qué entrada se debe proporcionar al programa para que ptrs[s] lea (y luego intente ejecutar) lo que se encuentra en el byte número 65 de buf (buf[64]) Responder usando un entero sin signo.
+Nuestro objetivo ahora es introducir una variante de la cadena de entrada que se muestra más abajo, para que la operación ptrs[s] ejecute la función write_secret() que imprime un secreto por pantalla. Para ello hay que lograr explotar el desbordamiento del buffer buf, inyectando una valor especifico a escribir en los bytes 65 a 68 del buffer. ¿Con qué valores se ha de reemplazar cada “YY” en la cadena de entrada que se muestra a continuación para lograr que el programa ejecute la función write_secret()? (Pista: Es preciso tener en cuenta el endianness de la arquitectura x86)
+
+Formato de la cadena de entrada:
+
+1040108884\x00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\xYY\xYY\xYY\xYY
+
+	(gdb) print write_secret                 
+	{void (void)} 0x804857c <write_secret>
+
+
+en lE:
+
+	x7c\x85\x04\x08
+
+
+	
